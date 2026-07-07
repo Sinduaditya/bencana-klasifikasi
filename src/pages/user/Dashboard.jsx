@@ -213,6 +213,9 @@ export default function UserDashboard() {
                 borderRadius: "16px",
                 padding: "40px",
                 textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
                 cursor: "pointer",
                 background: preview ? "transparent" : "rgba(255,255,255,0.03)",
                 marginBottom: "16px",
@@ -232,7 +235,15 @@ export default function UserDashboard() {
                   }}
                 />
               ) : (
-                <div>
+                <div
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    textAlign: "center",
+                  }}
+                >
                   <Upload
                     size={36}
                     color="rgba(255,255,255,0.3)"
